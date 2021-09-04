@@ -27,7 +27,7 @@ jobs:
 
       - run: echo "the job was automatically triggered by a ${{ github.event_name }}"
       - run: echo "this job is running on a ${{ runner.os }} server hosted by github"
-      - run: echo "the name of your branch is ${{ gihub.ref }} and your repo is ${{ gihub.repository }} "
+      - run: echo "the name of your branch is ${{ github.ref }} and your repo is ${{ gihub.repository }} "
       - name: checkout repository code
         uses: actions/checkout@v2
       - run: echo "the ${{ gihub.repository }} repository has been cloned to the runner"
